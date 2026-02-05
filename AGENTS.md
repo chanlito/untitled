@@ -34,7 +34,7 @@ A web application using TanStack Start, React 19, Vite 7, file-based routing, Ta
 
 ## Commit guidelines
 
-Use [Conventional Commits](https://www.conventionalcommits.org/). Optional emojis are encouraged to keep history fun and scannable.
+Use Conventional Commits with emojis: type(scope): emoji message
 
 **Format:** `type(scope): emoji message`
 
