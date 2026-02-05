@@ -40,7 +40,7 @@ Use Conventional Commits with emojis: type(scope): emoji message
 
 - **Types:** `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 - **Scope:** area of change (e.g. `auth`, `api`, `ui`, `routes`)
-- **Emoji:** one at the start of the message, optional
+- **Emoji:** one at the start of the message, required
 
 Examples:
 
