@@ -1,0 +1,15 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    ".agents": true,
+    ".agents/**": true,
+    ".claude": true,
+    ".claude/**": true,
+    ".cursor": true,
+    ".cursor/**": true,
+    ".output": true,
+    ".tanstack": true
+  }
+}
