@@ -1,4 +1,4 @@
-# untitled-app
+# Untitled
 
 TanStack Start app with React 19, Vite 7, TypeScript, Tailwind CSS, and shadcn/ui.
 
