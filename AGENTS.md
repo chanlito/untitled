@@ -6,7 +6,7 @@ A web application using TanStack Start, React 19, Vite 7, file-based routing, Ta
 
 ## Project structure
 
-- `src/routes/` – File-based routes. `__root.tsx` is the root layout.
+- `src/routes/` – File-based routes using **flat files** (no nested folders). Use dot-separated names for nesting (e.g. `app.dashboard.tsx` → `/app/dashboard`, `admin.users.tsx` → `/admin/users`). `__root.tsx` is the root layout.
 - `src/routeTree.gen.ts` – Generated route tree; do not edit.
 - `src/components/` – Shared UI (including `src/components/ui/` for shadcn-style components).
 - `src/lib/` – Shared utilities (e.g. `utils.ts`).
@@ -28,7 +28,7 @@ A web application using TanStack Start, React 19, Vite 7, file-based routing, Ta
 - **Formatting**: Prettier and ESLint (TanStack config). Run `npm run check` before committing.
 - **Components**: Functional components only. Shared UI in `src/components/`. After `npx shadcn@latest add <component>`, run `npm run check`.
 - **Styling**: Tailwind via `className`; prefer utility classes over inline styles.
-- **Routing**: `createFileRoute` from `@tanstack/react-router`; `Link` and `Outlet` for navigation. Routes live under `src/routes/`.
+- **Routing**: `createFileRoute` from `@tanstack/react-router`; `Link` and `Outlet` for navigation. Routes live under `src/routes/`. Use the **flat-route convention**: one file per route in `src/routes/`, with `.` denoting nesting (e.g. `app.settings.tsx` → `/app/settings`). Layout routes render `<Outlet />`; index routes under a segment use `createFileRoute('/segment/')` (trailing slash).
 - **Data**: Route loaders for route-level data; API routes or server functions for server logic.
 - **Tests**: Vitest + Testing Library; colocate or use a `tests/` directory.
 
